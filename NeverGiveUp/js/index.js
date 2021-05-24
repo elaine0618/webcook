@@ -1066,7 +1066,7 @@ function mainFn() {
             if (pos1.right < pos2.left || pos1.left > pos2.right || pos1.top > pos2.bottom || pos1.bottom < pos2.top) {
                 return false;
             } else {
-                return true;
+                return true;//debug
             }
         }
 
@@ -1092,7 +1092,7 @@ function mainFn() {
             if (tag <= init.tagMaxTop) {
                 tag = init.tagMaxTop
             }
-            //起跳碰撞高柱子
+            //起跳碰撞高柱子 debug
             if (tager > lis[n].t - 50 && n != lis.length - 1 && t < lis[n].t - 10) {
                 clearInterval(timer);
                 bgm.pause();
@@ -1152,7 +1152,7 @@ function mainFn() {
                     } else {
                         percentage.innerHTML = Math.floor((m + 1) / Data.length * 100) + '%';
                     }
-                    //连跳高柱检测
+                    //连跳高柱检测 debug
                     if (peng && t < lis[n].t - 20) {
                         setTimeout(function() {
                             clearInterval(timer);
