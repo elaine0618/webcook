@@ -205,32 +205,32 @@ body {
   cursor: pointer;
 }
 .index .character div:nth-of-type(1).selected {
-  background: url(../images/wbg.png) no-repeat -10px center;
+  background: url(../images/honoka_bg.png) no-repeat -10px center;
   background-size: 100% ;
 }
 .index .character div:nth-of-type(1).selected em {
-  background: url(../images/wselect.png) no-repeat center;
+  background: url(../images/honoka_select.png) no-repeat center;
 }
 .index .character div:nth-of-type(2).selected {
-  background: url(../images/rbg.png) no-repeat -10px center;
+  background: url(../images/rin_bg.png) no-repeat -10px center;
   background-size: 95%;
 }
 .index .character div:nth-of-type(2).selected em {
-  background: url(../images/rselect.png) no-repeat center;
+  background: url(../images/rin_select.png) no-repeat center;
 }
 .index .character div:nth-of-type(3).selected {
-  background: url(../images/gbg.png) no-repeat -10px center;
+  background: url(../images/hanayo_bg.png) no-repeat -10px center;
   background-size: 95% ;
 }
 .index .character div:nth-of-type(3).selected em {
-  background: url(../images/gselect.png) no-repeat center;
+  background: url(../images/hanayo_select.png) no-repeat center;
 }
 .index .character div:nth-of-type(4).selected {
-  background: url(../images/bbg.png) no-repeat -10px center;
+  background: url(../images/eli_bg.png) no-repeat -10px center;
   background-size: 95% ;
 }
 .index .character div:nth-of-type(4).selected em {
-  background: url(../images/bselect.png) no-repeat center;
+  background: url(../images/eli_select.png) no-repeat center;
 }
 .index .character em {
   position: absolute;
@@ -722,7 +722,7 @@ body {
   display: none;
 }
 .main .hover {
-  background: url("../images/gselect.png");
+  background: url("../images/hanayo_select.png");
 }
 .main .di {
   height: 92px;
