@@ -82,7 +82,7 @@ var highest = location.hash.substr(1).split('/')[3] || 1;
 var max = 0;
 //背景音乐
 // 图片
-var arrImg = ['./images/white.png', './images/red.png', './images/green.png', './images/blue.png']
+var arrImg = ['./images/honoka.png', './images/rin.png', './images/hanayo.png', './images/eli.png']
 
 function indexFn() {
     //初始
@@ -90,7 +90,7 @@ function indexFn() {
     var main = document.getElementsByClassName('main')[0];
     index.style.display = 'block';
     var mode = location.hash ? location.hash.substr(1).split('/')[0] : 0;
-    var charact = location.hash ? location.hash.substr(1).split('/')[1] : 'whiteC';
+    var charact = location.hash ? location.hash.substr(1).split('/')[1] : 'honoka';
     var levels = location.hash ? location.hash.substr(1).split('/')[2] : '1';
     //选择人物
     var character = index.getElementsByClassName('character')[0];
@@ -382,18 +382,18 @@ function victoryFn() {
 }
 //选择人物
 function chooseCharacter(obj) {
-    var hash = location.hash ? location.hash.substr(1).split('/')[1] : 'whiteC';
+    var hash = location.hash ? location.hash.substr(1).split('/')[1] : 'honoka';
     switch (hash) {
-        case 'whiteC':
+        case 'honoka':
             obj.style.background = 'url(' + arrImg[0] + ') no-repeat center'
             break;
-        case 'redC':
+        case 'rin':
             obj.style.background = 'url(' + arrImg[1] + ') no-repeat center'
             break;
-        case 'greenC':
+        case 'hanayo':
             obj.style.background = 'url(' + arrImg[2] + ') no-repeat center'
             break;
-        case 'blueC':
+        case 'eli':
             obj.style.background = 'url(' + arrImg[3] + ') no-repeat center'
             break;
     }
@@ -730,19 +730,19 @@ function mainFn() {
         var boss = document.getElementById('boss');
         boss.style.cssText = '';
         var character = boss.getElementsByTagName('div')[0];
-        j.character = j.character || './images/white.png';
+        j.character = j.character || './images/honoka.png';
         //人物选择
         switch (j.character) {
-            case 'whiteC':
+            case 'honoka':
                 character.style.backgroundImage = 'url(' + arrImg[0] + ')'
                 break;
-            case 'redC':
+            case 'rin':
                 character.style.backgroundImage = 'url(' + arrImg[1] + ')'
                 break;
-            case 'greenC':
+            case 'hanayo':
                 character.style.backgroundImage = 'url(' + arrImg[2] + ')'
                 break;
-            case 'blueC':
+            case 'eli':
                 character.style.backgroundImage = 'url(' + arrImg[3] + ')'
                 break;
         }

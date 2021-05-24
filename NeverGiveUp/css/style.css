@@ -136,7 +136,7 @@ body {
 .index .boss {
   width: 50px;
   height: 50px;
-  background: url("../images/white.png") no-repeat;
+  background: url("../images/honoka.png") no-repeat;
   background-size: 100%;
   position: absolute;
   left: 300px;
@@ -247,17 +247,17 @@ body {
   position: absolute;
   bottom: 42px;
 }
-.index .character .whiteC {
-  background: url(../images/white.png) no-repeat center;
+.index .character .honoka {
+  background: url(../images/honoka.png) no-repeat center;
 }
-.index .character .redC {
-  background: url(../images/red.png) no-repeat center;
+.index .character .rin {
+  background: url(../images/rin.png) no-repeat center;
 }
-.index .character .greenC {
-  background: url(../images/green.png) no-repeat center;
+.index .character .hanayo {
+  background: url(../images/hanayo.png) no-repeat center;
 }
-.index .character .blueC {
-  background: url(../images/blue.png) no-repeat center;
+.index .character .eli {
+  background: url(../images/eli.png) no-repeat center;
 }
 .index .new {
   display: block;
@@ -809,7 +809,7 @@ body {
   display: none;
 }
 .main #boss div {
-  background: url("../images/white.png") no-repeat;
+  background: url("../images/honoka.png") no-repeat;
   width: 76px;
   height: 70px;
   position: relative;
