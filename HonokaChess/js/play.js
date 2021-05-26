@@ -319,9 +319,9 @@ play.getClickMan = function (e){
 play.showWin = function (my){
 	play.isPlay = false;
 	if (my===1){
-		alert("恭喜你，你赢了！");
+		alert("You win!");
 	}else{
-		alert("很遗憾，你输了！");
+		alert("You lose!");
 	}
 }
 

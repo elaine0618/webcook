@@ -58,7 +58,7 @@ window.onload = function(){
 		}
 	})
 	com.get("superPlay").addEventListener("click", function(e) {
-		if (confirm("确认开始大师级对弈？")){
+		if (confirm("以中级水平开始对战？")){
 			play.isPlay=true ;	
 			com.get("chessRight").style.display = "none";
 			com.get("moveInfo").style.display = "block";
@@ -68,7 +68,7 @@ window.onload = function(){
 		}
 	})
 	com.get("tyroPlay").addEventListener("click", function(e) {
-		if (confirm("确认开始新手级对弈？")){
+		if (confirm("以新手水平开始对战？")){
 			play.isPlay=true ;	
 			com.get("chessRight").style.display = "none";
 			com.get("moveInfo").style.display = "block";
