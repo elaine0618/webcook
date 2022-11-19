@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html style="overflow: hidden;" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Free Responsive Html5 Templates">
+    
+	<title>点餐系统</title>
+	
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="styles/bootstrap.css">
+	
+    <!-- Custom Fonts -->
+	<link href="styles/font-awesome.css" rel="stylesheet" type="text/css">
+        
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+</head>
+<script>
+	function buy(){
+		document.getElementById('hometitle').innerText="统计";
+		document.getElementById('gouwuche').style.display="block";
+		document.getElementById('huncai').style.display="none";
+		document.getElementById('sucai').style.display="none";
+	}
+	function sucai(){
+		document.getElementById('hometitle').innerText="素菜";
+		document.getElementById('sucai').style.display="block";
+		document.getElementById('huncai').style.display="none";
+		document.getElementById('gouwuche').style.display="none";
+	}
+	function huncai(){
+		document.getElementById('hometitle').innerText="荤菜";
+		document.getElementById('huncai').style.display="block";
+		document.getElementById('sucai').style.display="none";
+		document.getElementById('gouwuche').style.display="none";
+	}
+	
+</script>
+<body>
+   <!--header start-->
+	<header class="header">
+		<!--logo start-->
+		<a href="javascript:void(0)" onclick="buy()" class="logo"><b>点餐统计</b></a>
+		<!--logo end-->
+	</header>
+	<!--header end-->
+	<!--sidebar start-->
+	<aside>
+		<div id="sidebar" class="nav-collapse " style="overflow: hidden; outline: currentcolor none medium;" tabindex="5000">
+			<!-- sidebar menu start-->
+			<ul class="sidebar-menu">
+				<li>
+					<a href="javascript:void(0)" onclick="sucai()">
+						<span>素菜</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" onclick="huncai()">
+						<span>荤菜</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span>凉菜</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span>点心</span>
+					</a>
+				</li>
+				<li>
+					<a href="./home.html">
+						<span>清空</span>
+					</a>
+				</li>
+			</ul>
+		  <!-- sidebar menu end-->
+		</div>
+	</aside>
+    <!--sidebar end-->
+	
+	<!--main content start-->
+	<section id="main-content">
+		<section class="wrapper">
+			<!-- Carousel -->
+			<center><h1 id="hometitle">素菜</h1></center>
+			
+			<div id="sucai" class="no-gutter">
+				<div class="col-lg-6">
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<img src="img/food_001.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>酱香肘</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥15</p>
+									<button class="btn btn-theme" data-title="酱香肘" data-price="15">点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6">
+								<img src="img/food_001.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>过桥排骨</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥15</p>
+									<button class="btn btn-theme" data-title="过桥排骨" data-price="15" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<img src="img/food_001.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>青椒翘壳</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥15</p>
+									<button class="btn btn-theme" data-title="青椒翘壳" data-price="15" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-6">
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<div class="box-image">
+									<img src="img/food_001.jpg">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>青蒸鲈鱼</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥15</p>
+									<button class="btn btn-theme" data-title="青蒸鲈鱼" data-price="15" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6">
+								<img src="img/food_001.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>跳水翘壳</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥15</p>
+									<button class="btn btn-theme" data-title="跳水翘壳" data-price="15" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<img src="img/food_001.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>剁椒翘壳</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥15</p>
+									<button class="btn btn-theme" data-title="剁椒翘壳" data-price="15" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			
+			<div id="huncai" class="no-gutter" style="display:none;">
+				<div class="col-lg-6">
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<img src="img/food_002.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>酱香肘</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥5.75</p>
+									<button class="btn btn-theme" data-title="Chicken Salad" data-price="5.75">点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6">
+								<img src="img/food_002.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>过桥排骨</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥5.75</p>
+									<button class="btn btn-theme" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<img src="img/food_002.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>青椒翘壳</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥5.75</p>
+									<button class="btn btn-theme" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="col-lg-6">
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<div class="box-image">
+									<img src="img/food_002.jpg">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>青蒸鲈鱼</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥5.75</p>
+									<button class="btn btn-theme" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6">
+								<img src="img/food_002.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>跳水翘壳</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥5.75</p>
+									<button class="btn btn-theme" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="box-shadow">
+						<div class="no-gutter">
+							<div class="col-sm-6 fix-right">
+								<img src="img/food_002.jpg">
+							</div>
+							<div class="col-sm-6">
+								<div class="art-content text-center">
+									<div class="heading">
+										<h2>剁椒翘壳</h2>
+										<hr class="line">
+									</div>
+									<p class="g-price">￥5.75</p>
+									<button class="btn btn-theme" >点一份</button>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			
+			<div id="gouwuche" class="no-gutter" style="display:none;">
+				<div class="screen-cart">
+					<h2>已点餐品</h2>
+					<ul class="cart-items"></ul>
+					<div class="cart-math"></div>
+				</div>
+			</div>
+		</section><!-- /wrapper -->
+	</section><!-- /MAIN CONTENT -->
+	
+	<!--main content end-->
+	<!--footer start-->
+	<footer class="site-footer">
+	  <div class="text-center">
+		  Kurokawayuki
+	  </div>
+	</footer>
+	<!--footer end-->
+	
+	
+	<!-- js placed at the end of the document so the pages load faster -->
+    <script src="styles/jquery.js"></script>
+	<script src="styles/bootstrap.js"></script>
+	<script src="styles/jquery_002.js"></script>
+	<script src="styles/script.js"></script>
+    <!--common script for all pages-->
+    <script src="styles/common-scripts.js"></script>
+	<div id="ascrail2000" class="nicescroll-rails" style="width: 3px; z-index: auto; background: rgb(64, 64, 64) none repeat scroll 0% 0%; cursor: default; position: fixed; top: 0px; left: 207px; height: 262px; display: none; opacity: 0;">
+		<div style="position: relative; top: 0px; float: right; width: 3px; height: 238px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;">
+		</div>
+	</div>
+	<div id="ascrail2000-hr" class="nicescroll-rails" style="height: 3px; z-index: auto; background: rgb(64, 64, 64) none repeat scroll 0% 0%; top: 259px; left: 0px; position: fixed; cursor: default; display: none; width: 207px; opacity: 0;">
+		<div style="position: relative; top: 0px; height: 3px; width: 210px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;">
+		</div>
+	</div>
+	<div id="ascrail2001" class="nicescroll-rails" style="width: 6px; z-index: 1000; background: rgb(64, 64, 64) none repeat scroll 0% 0%; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0;">
+		<div style="position: relative; top: 160px; float: right; width: 6px; height: 371px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;">
+		</div>
+	</div>
+	<div id="ascrail2001-hr" class="nicescroll-rails" style="height: 6px; z-index: 1000; background: rgb(64, 64, 64) none repeat scroll 0% 0%; position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0;">
+		<div style="position: relative; top: 0px; height: 6px; width: 1920px; background-color: rgb(78, 205, 196); background-clip: padding-box; border-radius: 10px;">
+		</div>
+	</div>
+
+
+</body>
+<SCRIPT SRC="styles/console-ban.min.js"></script>
+</html>
